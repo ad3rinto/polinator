@@ -24,8 +24,32 @@ img {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-section {
+section section {
 	float: left;
-	margin: 50px;
+	margin: 20px;
 	align-content: center;
+}
+#dateOfDay h1 {
+	text-align: center;
+	/* padding-left: 350px; */
+	justify-content: center;
+	width: 50%;
+}
+.high {
+	color: red;
+	font-size: larger;
+}
+
+.medium {
+	color: orange;
+	font-size: larger;
+}
+
+.low {
+	color: green;
+	font-size: larger;
+}
+.container h3 {
+	margin: 0 auto;
+	text-align: center;
 }
