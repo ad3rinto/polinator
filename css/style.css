@@ -14,18 +14,45 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+main,
+header,
+h1,
+#dateOfDay {
+	align-content: center;
+	text-align: center;
+	padding-top: 12px;
+}
+
+main {
+	background-color: aqua;
+	height: 700px;
+}
+
+header {
+	background-color: burlywood;
+	height: 50px;
+	justify-content: center;
+}
+
+footer {
+	background-color: black;
+	height: 100px;
+	margin-top: 60px;
+	text-align: center;
+}
 img {
 	/* margin: 0 auto auto 20px; */
-	width: 200px;
-	height: 200px;
-	border-radius: 18%;
+	width: 150px;
+	height: 100px;
+	border-radius: 8%;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 section section {
-	float: left;
+	/* float: left; */
 	margin: 20px;
 	align-content: center;
 }
@@ -33,7 +60,6 @@ section section {
 	text-align: center;
 	/* padding-left: 350px; */
 	justify-content: center;
-	width: 50%;
 }
 .high {
 	color: red;
@@ -52,4 +78,12 @@ section section {
 .container h3 {
 	margin: 0 auto;
 	text-align: center;
+}
+
+p {
+	color: white;
+	padding-top: 77px;
+}
+body {
+	background-color: aqua;
 }

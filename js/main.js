@@ -41,7 +41,7 @@ function getFetch() {
       if (pollenData.treeIndex >= 3) {
         document.querySelector("h3" + ".tree").innerHTML = "HIGH"
         document.querySelector("h3" + ".tree").classList.add("high")
-      } else if (pollenData.treeIndex > 1) {
+      } else if (pollenData.treeIndex >= 1) {
         document.querySelector("h3" + ".tree").innerHTML = "MEDIUM"
         document.querySelector("h3" + ".tree").classList.add("medium")
       } else {
@@ -51,6 +51,7 @@ function getFetch() {
 
 
       if (pollenData.grassIndex >= 3) {
+        console.log(pollenData.grassIndex)
         document.querySelector("h3" + ".grass").innerHTML = "HIGH"
         document.querySelector("h3" + ".grass").classList.add("high")
       } else if (pollenData.grassIndex > 1) {
