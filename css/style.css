@@ -27,7 +27,6 @@ h1,
 main {
 	background-color: aqua;
 	height: 67vh;
-	/* height: 400px; */
 }
 
 header {
@@ -41,9 +40,9 @@ footer {
 	height: 100px;
 	margin-top: 80px;
 	text-align: center;
+	margin-bottom: 0;
 }
 img {
-	/* margin: 0 auto auto 20px; */
 	width: 150px;
 	height: 100px;
 	border-radius: 8%;
@@ -53,13 +52,11 @@ img {
 /* ADDITIONAL STYLES
 /*******************************************/
 section section {
-	/* float: left; */
 	margin: 20px;
 	align-content: center;
 }
 #dateOfDay h1 {
 	text-align: center;
-	/* padding-left: 350px; */
 	justify-content: center;
 }
 .high {
@@ -87,16 +84,17 @@ p {
 }
 body {
 	background-color: aqua;
-	/* height: 500px; */
 }
 .main {
 	display: flex;
 	justify-content: space-around;
+	flex-direction: column;
 }
 
-.container {
-	display: inline-block;
-}
 body {
 	max-height: 100vh;
+}
+
+.main .container {
+	align-self: auto;
 }
