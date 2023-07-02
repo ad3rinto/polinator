@@ -73,7 +73,7 @@ section section {
 	color: green;
 	font-size: larger;
 }
-.container h3 {
+.item h3 {
 	margin: 0 auto;
 	text-align: center;
 }
@@ -85,16 +85,12 @@ p {
 body {
 	background-color: aqua;
 }
-.main {
+.container {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
 }
 
 body {
-	max-height: 100vh;
-}
-
-.main .container {
-	align-self: auto;
+	max-height: 90vh;
 }
