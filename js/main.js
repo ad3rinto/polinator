@@ -5,23 +5,23 @@ document.querySelector('#dateOfDay').innerHTML = `<h1>${dateToday}</h1>`;
 document.querySelector('button').addEventListener('click', getFetch)
 
 
-function importText(textFile) {
-  "use strict";
-  var rawFile = new XMLHttpRequest();
-  var allText = "";
-  rawFile.open("Get", textFile, false);
-  rawFile.onreadystatechange = function () {
-    if (rawFile.readyState === 4) {
-      if (rawFile.status === 200 || rawFile.status == 0) {
-        allText = rawFile.responseText;
-      }
-    }
-  }
-  rawFile.send(null);
-  return allText;
-}
+// function importText(textFile) {
+//   "use strict";
+//   var rawFile = new XMLHttpRequest();
+//   var allText = "";
+//   rawFile.open("Get", textFile, false);
+//   rawFile.onreadystatechange = function () {
+//     if (rawFile.readyState === 4) {
+//       if (rawFile.status === 200 || rawFile.status == 0) {
+//         allText = rawFile.responseText;
+//       }
+//     }
+//   }
+//   rawFile.send(null);
+//   return allText;
+// }
 
-const key = importText("key.txt")
+// const key = importText("key.txt")
 
 
 
@@ -31,7 +31,7 @@ function getFetch() {
   const location = document.querySelector('#pCode').value
 
   console.log(location)
-  const API_KEY = key
+  const API_KEY = 'bJZz5xKEbi9sGF09SrjGXVoWmBnlBcbP'
   const url = `https://api.tomorrow.io/v4/timelines?location=${location}&timesteps=1d&units=metric&apikey=${API_KEY}&fields=treeIndex,grassIndex,weedIndex`
 
   fetch(url)
