@@ -33,11 +33,13 @@ header {
 	background-color: burlywood;
 	height: 50px;
 	justify-content: center;
+	margin-bottom: 60px;
+	padding: 10px;
 }
 
 footer {
-	background-color: black;
-	height: 100px;
+	background-color: aqua;
+	height: 50px;
 	margin-top: 80px;
 	text-align: center;
 	margin-bottom: 0;
@@ -74,16 +76,27 @@ section section {
 	font-size: larger;
 }
 .item h3 {
+	flex-basis: 100px;
+	flex-direction: column;
+	flex-grow: 1;
 	margin: 0 auto;
 	text-align: center;
 }
 
+
+container.body {
+	display: flex;
+
+}
+
 p {
-	color: white;
+	color: darkgreen;
 	padding-top: 77px;
 }
 body {
+	display: flex;
 	background-color: aqua;
+	flex-direction: column;
 }
 .container {
 	display: flex;
@@ -93,4 +106,10 @@ body {
 
 body {
 	max-height: 90vh;
+}
+
+.container2 {
+	display: flex;
+	justify-content: space-around;
+/*	flex-direction: column;*/
 }
