@@ -26,28 +26,39 @@ h1,
 
 main {
 	background-color: aqua;
-	height: 67vh;
+	height: auto;
 }
 
 header {
-	background-color: burlywood;
-	height: 50px;
-	justify-content: center;
-	margin-bottom: 60px;
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 10px;
+	background-color: rgb(133, 122, 108);
+	height: 60px;
+	justify-content: space-evenly;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 12px;
+}
+
+input,
+button {
+	margin: auto;
 }
 
 footer {
-	background-color: aqua;
-	height: 50px;
+	background-color: rgb(246, 249, 249);
+	height: 30px;
 	margin-top: 80px;
 	text-align: center;
 	margin-bottom: 0;
+	color: black;
 }
 img {
 	width: 150px;
-	height: 100px;
-	border-radius: 8%;
+	height: 150px;
+	border-radius: 50%;
 }
 
 /******************************************
@@ -83,20 +94,20 @@ section section {
 	text-align: center;
 }
 
-
 container.body {
 	display: flex;
-
 }
 
 p {
 	color: darkgreen;
-	padding-top: 77px;
+	padding-top: 20px;
+	height: 40px;
 }
 body {
 	display: flex;
-	background-color: aqua;
+	background-color: rgb(145, 228, 28);
 	flex-direction: column;
+	height: 80%;
 }
 .container {
 	display: flex;
@@ -104,12 +115,9 @@ body {
 	flex-direction: column;
 }
 
-body {
-	max-height: 90vh;
-}
-
 .container2 {
 	display: flex;
 	justify-content: space-around;
-/*	flex-direction: column;*/
+	padding: 0 60px;
+	/*	flex-direction: column;*/
 }
